@@ -8,8 +8,8 @@ app.listen(5000, ()=>{
 
 client.connect();
 
-app.get('/api/users', (req, res)=>{
-    client.query(Select * from, users, (err, result)=>{
+app.get('/api/person', (req, res)=>{
+    client.query('Select * from person', (err, result)=>{
         if(!err){
             res.send(result.rows);
         }
