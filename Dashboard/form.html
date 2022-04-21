@@ -337,8 +337,13 @@
 
                                                     </div>
                                                     <div class="row mt-3">
-                                                        <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""></div>
-                                                        <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
+                                                        <div class="dropdown">
+                                                            <script class="jsbin" src="js/upload.js"></script>
+                                                            <div id="myDropdown" class="dropdown-content">
+                                                                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                                                <a href="#about">About</a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
                                                 </div>
