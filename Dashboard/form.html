@@ -346,6 +346,22 @@
                                             <div class="col-md-4">
                                                 <div class="p-3 py-5">
                                                     <div class="col-md-12"><label class="labels">Descrição</label><textarea type="text" class="form-control" rows="6" ></textarea></div> <br>
+                                                    <script class="jsbin" src="js/upload.js"></script>
+                                                    <div class="file-upload">
+                                                        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Cfg</button>
+
+                                                        <div class="image-upload-wrap">
+                                                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".cfg" />
+                                                            <div class="drag-text">
+                                                                <h3>Drag and drop a Cfg</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="file-upload-content">
+                                                            <div class="image-title-wrap">
+                                                                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -389,8 +405,8 @@
     <script src="vendor/circle-progress/circle-progress.min.js"></script>
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="vendor/select2/select2.min.js">
-    </script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="js/upload.js"></script>
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
