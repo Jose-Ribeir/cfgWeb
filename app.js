@@ -46,7 +46,7 @@ app.post('/users', users.createUser)
 app.put('/users/:id', users.updateUser)
 app.delete('/users/:id', users.deleteUser)
 
-app.get('/stores', stores.getStores)
+app.get('/storessssssss', stores.getStores)
 
 
 module.exports = app
