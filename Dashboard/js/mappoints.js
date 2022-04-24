@@ -12,9 +12,9 @@ const citymap = {
 
 async function initMap() {
     const json = await getData()
-    console.log(json[0].st_x)
-    console.log(typeof json[0].st_x)
-    var myLatlng = new google.maps.LatLng(parseFloat(json[0].st_x), parseFloat(json[0].st_y));
+    console.log(json[1].st_x)
+    console.log(typeof json[1].st_x)
+    var myLatlng = new google.maps.LatLng(parseFloat(json[1].st_x), parseFloat(json[1].st_y));
 
     var mapOptions = {
         zoom: 9,
@@ -23,7 +23,7 @@ async function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
     var marker = new google.maps.Marker({
-        position: citymap.Porto.center,
+        position: new google.maps.LatLng(parseFloat(json[1].st_x), parseFloat(json[1].st_y)),
         title:"Hello World!"
     });
 
@@ -35,12 +35,10 @@ window.initMap = initMap;
 
 
 async function getData(){
-    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-        targetUrl = 'http://localhost/store'
+    var targetUrl = 'https://cfg-63jegxxhlq-nw.a.run.app/store'
 
 
-    const response = await fetch(
-        proxyUrl + targetUrl)
+    const response = await fetch(targetUrl)
     const data = await response.json()
     console.log(data)
     return data

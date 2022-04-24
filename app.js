@@ -27,7 +27,6 @@ const app = express()
 const users = require('./routes/user')
 const stores = require('./routes/store')
 
-const port = 80
 
 app.use(bodyParser.json())
 app.use(
@@ -49,6 +48,5 @@ app.delete('/users/:id', users.deleteUser)
 
 app.get('/store', stores.getStores)
 
-app.listen(port, () => {
-    console.log(`App running on port ${port}.`)
-})
+
+module.exports = app
