@@ -99,6 +99,9 @@ p {
 
 /* ----- Typography ----- */
 body {
+    font-family: Ubuntu; /*"times new roman", times, roman, serif;*/
+}
+/*body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -106,7 +109,7 @@ body {
     color: #666;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+}*/
 
 h1,
 h2,
@@ -531,7 +534,7 @@ section {
 }
 
 .login-checkbox > label > a {
-    color: #ff2e44;
+    color: #0000bb;
 }
 
 @media (max-width: 991px) {
@@ -571,7 +574,7 @@ section {
 }
 
 .register-link > p > a {
-    color: #ff2e44;
+    color: #0000ee;
 }
 
 .fontawesome-list-wrap {
@@ -654,11 +657,11 @@ section {
 }
 
 .au-btn--green {
-    background: #63c76a;
+    background: #008100;
 }
 
 .au-btn--green:hover {
-    background: #59bd60;
+    background: #808080;
 }
 
 .au-btn-plus {

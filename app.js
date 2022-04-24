@@ -24,7 +24,8 @@ module.exports = app;
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const users = require('./routes/users')
+const users = require('./routes/user')
+const stores = require('./routes/store')
 
 const port = 80
 
@@ -45,6 +46,8 @@ app.get('/users/:id', users.getUserById)
 app.post('/users', users.createUser)
 app.put('/users/:id', users.updateUser)
 app.delete('/users/:id', users.deleteUser)
+
+app.get('/store', stores.getStores)
 
 app.listen(port, () => {
     console.log(`App running on port ${port}.`)
