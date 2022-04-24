@@ -534,7 +534,7 @@ section {
 }
 
 .login-checkbox > label > a {
-    color: #0000bb;
+    color: #0000ee;
 }
 
 @media (max-width: 991px) {
@@ -657,7 +657,7 @@ section {
 }
 
 .au-btn--green {
-    background: #008100;
+    background: #00bb00;
 }
 
 .au-btn--green:hover {
