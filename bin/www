@@ -89,7 +89,7 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-var pool = require("../models/connection");
+var pool = require("../../api-cfg/models/connection");
 process.once('SIGTERM', end);
 process.once('SIGINT', end);
 function end() {

@@ -1,15 +1,3 @@
-// var express = require('express');
-// var router = express.Router();
-//
-//
-// /* GET users listing. */
-// router.get('/', function(req, res, next) {
-//   let users=[{name:"John Doe",birthDate:"19/02/1999"}];
-//   res.send(users);
-// });
-//
-// module.exports = router;
-
 const client = require('../../api-cfg/models/connection.js')
 const express = require('express');
 const {log} = require("debug");
